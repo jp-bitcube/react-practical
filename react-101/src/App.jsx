@@ -1,4 +1,5 @@
 import Hello from './components/Hello'
+import Counter from './components/Counter'
 
 const peopleData = [
   {name: 'John', message: 'Howzit!!'},
@@ -11,6 +12,7 @@ function App() {
     <div className='App'>
       <h2>React 101</h2>
       <Hello people={peopleData}/>
+      <Counter />
     </div>
   )
 }
