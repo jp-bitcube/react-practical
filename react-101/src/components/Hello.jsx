@@ -7,8 +7,8 @@ function Hello({ people }) {
         { 
           people.map((person, index) => { 
             return <li key={index}> {person.message} <b>{person.name}</b> </li>
-          }) 
-        } 
+          })
+        }
       </ul>
     </div>
   );

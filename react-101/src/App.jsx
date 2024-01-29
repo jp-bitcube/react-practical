@@ -1,5 +1,6 @@
-import Hello from './components/Hello'
-import Counter from './components/Counter'
+import Hello from './components/Hello';
+import Counter from './components/Counter';
+import UserForm from './components/UserForm';
 
 const peopleData = [
   {name: 'John', message: 'Howzit!!'},
@@ -13,6 +14,7 @@ function App() {
       <h2>React 101</h2>
       <Hello people={peopleData}/>
       <Counter />
+      <UserForm />
     </div>
   )
 }
