@@ -4,14 +4,14 @@ function Hello({ people }) {
     <div className="Hello"> 
       <h3>Greetings</h3>
       <ul>
-        { 
+        {
           people.map((person, index) => { 
-            return <li key={index}> {person.message} <b>{person.name}</b> </li>
+            return <li key={index}> {person.message} <b>{person.name}</b></li>;
           })
         }
       </ul>
     </div>
   );
-}
+};
 
-export default Hello
+export default Hello;

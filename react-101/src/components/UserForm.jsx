@@ -1,17 +1,22 @@
 import { useState } from "react"
 
 export default function UserForm() {
-    const [ userName, setUserName ] = useState();
+    const [ user, setUser ] = useState({ name: '', phoneNumber: '' });
+
     return (
         <div>
           <h3>User Form: </h3>
-          <br />
+          <br/>
             <form>
-              <input onChange={(e) => setUserName(e.target.value)} value={ userName } placeholder="Name"></input>
+              <input onChange={(e) => setUser({ ...user, name: e.target.value })} value={ user.name } placeholder="Name" />
+              <br />
+              <input onChange={(e) => setUser({ ...user, phoneNumber: e.target.value })} value={ user.phoneNumber } placeholder="Phone number" />
             </form>
-          <br />
+          <br/>
           <p>
-            <b>Name Inserted: </b> { userName }
+            <b>Name typed: </b> { user.name }
+            <br />
+            <b>Phone number typed: </b> { user.phoneNumber }
           </p>
         </div>
     )
