@@ -1,0 +1,26 @@
+.itemContainer {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+}
+
+.itemImage {
+    width: 60px;
+    height: 60px;
+}
+
+.itemContent {
+    margin-left: 40px;
+}
+
+.itemTitle {
+    margin: 0px;
+    font-size: 18px;
+}
+
+
+.itemText {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
