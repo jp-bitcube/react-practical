@@ -1,11 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import ProductCard from './components/ProductCard'
+import AddToChart from './components/AddToChart'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <div>
         Hello World !
       </div>
+      <Link href='/users'>Users</Link>
+      <ProductCard><AddToChart/></ProductCard>
     </main>
   )
 }
